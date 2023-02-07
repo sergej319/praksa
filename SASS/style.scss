@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    background-color:white;
+}
+h2{
+    font-family: "Roboto";
+    font-size: 42px;
+    color: #303030;
+}
+hr{
+    border:1px solid #303030;
+}
+.p28{
+    font-family: "Inter";
+    font-size: 28px;
+    color: #474747;
+}
+.dugme{
+    font-family: "Roboto";
+    color:#fff;
+    padding: 15px 16px;
+    background-color: #bf0f0f;
+    border-radius: 4px;
+}
+a{
+    text-decoration: none;
+}
+.listanje a{
+    font-size: 14px;
+    font-family: "Roboto";
+    color: #474747
+}
+.menu-article-text{
+    font-family: "Roboto";
+    font-size: 24px;
+    color: #474747;
+}
+h4{
+    font-family: "Inter";
+    font-size: 46px;
+    color: #fff;
+}
+.p18{
+    font-family: "Inter";
+    font-size: 14px;
+    color: #fff;
+}
+.brojke{
+    text-align: center;
+    justify-content: center;
+}
+.brendovi{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 40%;
+    text-align: center;
+    padding: 5%;
+}
+.pozadina{
+    background-image: url("../img/pozadina.png");
+    justify-content: center;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: justify;
+    width: 100%;
+    padding: 5% 0;
+}
+td{
+    width:200px;
+    padding: 0%;
+}
+.pasus-1{
+    background-color: #f4f4f4;
+    margin-top: 73px;
+    margin-bottom: 70px;
+    margin-right: 151px;
+    width: 100%;
+}
+.onama{
+    float: left;
+    width: 50%;
+    padding: 5%;
+}
+.zgrada{
+    float: left;
+    width: 40%;
+    height: 40%;
+}
+.proizvodi{    
+    background-color: #f4f4f4 !important;
+    text-align: center;
+    width: 100%;
+    padding: 30px auto;
+}
+.p14{
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #474747;
+}
+.convoy-img{
+    width: 100%;
+}
+.video{
+    width: 100%;
+}
+.sve-kartice{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+.kartica{
+    margin-bottom: 10%;
+    background-color: white;
+    background-size: cover;
+    width: 15%;
+    position: relative;
+}
+.kartica-opis{
+    font-family: "Roboto";
+    font-size: 24px;
+    color: #474747;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+.kartica-img{
+    position: relative;
+}
+.menu{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.menu-article{
+    width: 30%;
+}
+.menu-article{
+    width:100%;
+}
+.brendovi-png{
+    padding-bottom: 50px;
+}
+/*listanje-kese">
+                    KESE I FOLIJE
+                </a>
+                <a href="#" class="listanje-kuhinja">
+                    ZA KUHINJU
+                </a>
+                <a href="#" class="listanje-ubrusi">
+                    UBRUSI I TOALET PAPIRI
+                </a>
+                <a href="#" class="listanje-kozmetika">
+                    KOZMETIKA
+                </a>
+                <a href="#" class="listanje-kante">*/
