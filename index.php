@@ -18,8 +18,9 @@
         <div class="onama">
             
             <h2>DVG Company</h2>
-            <hr>
+            
             <p class="p28">Veleprodaja i maloprodaja kozmetike i kućne hemije</p>
+            <hr>
             <p class="p14">
                 DVG Company d.o.o. je trgovinsko preduzeće osnovano 2008. godine u Subotici.
                 Prvenstvena delatnost kompanije je veleprodaja kozmetike i kućne hemije.
@@ -34,39 +35,39 @@
         <img src="img/convoy.png" class="convoy-img">
     </div>
     <div class="menu">
-        <div class="menu-article">
+        <a href="#"><div class="menu-article">
             <img src="img/staff.png" class="menu-article-img" href="#">
-            <br><a href="#" class="menu-article-text">POSTANITE NAŠ PARTNER</a>
-        </div>
-        <div class="menu-article">
+            <br><p class="menu-article-text">POSTANITE NAŠ PARTNER</p>
+        </div></a>
+        <a href="#"><div class="menu-article">
             <img src="img/komarac.png" class="menu-article-img" href="#"><br>
-            <a href="#" class="menu-article-text">NAŠI PROIZVODI</a>
-        </div>
-        <div class="menu-article">
+            <p class="menu-article-text">NAŠI PROIZVODI</p>
+        </div></a>
+        <a href="#"><div class="menu-article">
             <img src="img/kombiji.png" class="menu-article-img" href="#"><br>
-            <a href="#" class="menu-article-text">UVOZ IZ MAĐARSKE</a>
-        </div>
+            <p class="menu-article-text">UVOZ IZ MAĐARSKE</p>
+        </div></a>
     </div>
     
         <div class="brojke">
             <h2>DVG Company</h2>
             <p class="p28">u brojkama</p>
             <div class="pozadina">
-                <table><tr>
-                    <td><h4>3.000m<sup>2</sup></h4><p class="p18">Magacinskog prostora</p></td>
-                    <td><h4>20</h4><p class="p18">Vozila</p></td>
-                    <td><h4>8</h4><p class="p18">Komercijalista</p></td>
-                    <td><h4>170</h4><p class="p18">Brendova</p></td></tr>
-                </table>
+                <div class="table">
+                    <div class="cell-1"><div class="cell-data"><h4 class="magacin">3.000<p class="p18">m<sup>2</sup></p></h4><p class="p18">Magacinskog prostora</p></div></div>
+                    <div class="cell"><div class="cell-data"><h4>20</h4><p class="p18">Vozila</p></div></div>
+                    <div class="cell"><div class="cell-data"><h4>8</h4><p class="p18">Komercijalista</p></div></div>
+                    <div class="cell"><div class="cell-data"><h4>170</h4><p class="p18">Brendova</p></div></div>
+                </div>
             </div>
         </div>
-        <div class="proizvodi">
+        <div class="proizvodi"><div class="proizvodi-top">
             <p class="p28">Naši proizvodi</p>
             <p class="p14">
                 Naše proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna<br>
                 nega lica i tela. Uspeli smo da uskladimo kvalitet i cenu, što su prepoznali i naši<br>
                 kupci.
-            </p>
+            </p></div>
             <div class="sve-kartice">
                 <a href="#"><div class="kartica">
                     <img src="img/kese.png" class="kartica-img">
@@ -88,17 +89,43 @@
                     <img src="img/kante.png" class="kartica-img">
                     <div class="kartica-opis">PLASTIČNE KANTE</div>
                 </div></a>
+                
             </div>
+            <img src="img/ghost.png" class="ghost">
         </div>
         <div class="brendovi">
             <p class="p28">
                 Istaknuti brendovi za koje radimo
                 distribuciju
             </p>
-            <hr>
-            <img src="img/brendovi.png" class="brendovi-png"><br><br>
-            <a href="#" class="dugme">Svi brendovi u našem portfoliju</a>
-        </div>
+            <div class="brendovi-tabela">
+                <div class="brendovi-cell">
+                    <img src="img/dove.png" class="brendovi-png">
+                    <p class="brendovi-opis">Dove</p>
+                </div>
+                <div class="brendovi-cell">
+                    <img src="img/nivea.png" class="brendovi-png">
+                    <p class="brendovi-opis">Nivea</p>
+                </div>
+                <div class="brendovi-cell">
+                    <img src="img/palmolive.png" class="brendovi-png">
+                    <p class="brendovi-opis">Palmolive</p>
+                </div>
+                <div class="brendovi-cell">
+                    <img src="img/vanish.png" class="brendovi-png">
+                    <p class="brendovi-opis">Vanish</p>
+                </div>
+                <div class="brendovi-cell">
+                    <img src="img/ajax.png" class="brendovi-png">
+                    <p class="brendovi-opis">Ajax</p>
+                </div>
+                <div class="brendovi-cell">
+                    <img src="img/cif.png" class="brendovi-png">
+                    <p class="brendovi-opis">Cif</p>
+                </div>
+                </div> 
+            <div class="dugme-okvir"><a href="#" class="dugme">Svi brendovi u našem portfoliju</a></div>               
+    </div>
     
     <?php require 'constants/footer.php'; ?>
 </body>

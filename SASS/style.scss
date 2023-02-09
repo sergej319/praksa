@@ -9,16 +9,58 @@ h2{
     font-family: "Roboto";
     font-size: 42px;
     color: #303030;
+    margin-left: 7%;
+    margin-right: 20%;
 }
 hr{
     border:1px solid #303030;
+    margin-left: 7%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+}
+.onama .p28{
+    font-family: "Inter";
+    font-size: 28px;
+    color: #474747;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin-left: 7%;
+    margin-right: 20%;
+}
+.onama{
+
+}
+.onama .p14{
+    margin-left: 7%;
+    margin-right: 20%
+    padding-top: 5%
+}
+.onama .dugme{
+    font-family: "Roboto";
+    color:#fff;
+    padding: 15px 16px;
+    background-color: #bf0f0f;
+    border-radius: 4px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 34.86px;
+}
+.onama h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5%;
+    padding-bottom: 7%;
 }
 .p28{
     font-family: "Inter";
     font-size: 28px;
     color: #474747;
     margin-top: 0;
-    padding-top: 28px;
+    margin-bottom: 0;
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 .dugme{
     font-family: "Roboto";
@@ -39,6 +81,7 @@ a{
     font-family: "Roboto";
     font-size: 24px;
     color: #474747;
+    margin-top: 26px;
 }
 h4{
     font-family: "Inter";
@@ -54,13 +97,23 @@ h4{
     text-align: center;
     justify-content: center;
 }
+.brojke h2{
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 42px;
+    color: #303030;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}
 .brendovi{
     margin-left: auto;
     margin-right: auto;
     width: 75%;
     height: 40%;
     text-align: center;
-    padding: 5%;
+    padding: 0 5%;
+    padding-bottom: 90px;
 }
 .pozadina{
     background-image: url("../img/pozadina.png");
@@ -81,24 +134,20 @@ td{
 }
 .pasus-1{
     background-color: #f4f4f4;
-    margin-top: 73px;
-    margin-bottom: 70px;
-    margin-right: 151px;
     width: 100%;
 }
 .onama{
     float: left;
     width: 50%;
-    padding: 5%;
+    height: 50%;
 }
 .zgrada{
     float: left;
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
 }
 .proizvodi{    
     background-color: #f4f4f4 !important;
-    text-align: center;
     width: 100%;
 }
 .p14{
@@ -106,11 +155,17 @@ td{
     font-size: 14px;
     color: #474747;
 }
+.convoy{
+    
+}
 .convoy-img{
+    margin-top: 73px;
     width: 100%;
 }
 .video{
     width: 100%;
+    border-top: 0.5px solid #888787;
+    margin-bottom: 73px;
 }
 .sve-kartice{
     display: flex;
@@ -118,23 +173,23 @@ td{
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
+    padding-bottom: 90px;
 }
 .kartica{
     margin-bottom: 10%;
     background-color: white;
     background-size: cover;
-    width: 15%;
+    width: 18%;
     position: relative;
 }
 .kartica-opis{
     font-family: "Roboto";
     font-size: 24px;
     color: #474747;
-    margin-left: auto;
-    margin-right: auto;
     position: absolute;
-    bottom: 8px;
+    bottom: 15px;
     left: 16px;
+    background-size: 100%;
 }
 .kartica-img{
     position: relative;
@@ -145,6 +200,7 @@ td{
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    justify-content: space-between;
 }
 .menu-article{
     width: 30%;
@@ -205,6 +261,7 @@ td{
     text-decoration: underline;
 }
 .contacts-item{
+    display: flex;
     margin: 0;
     font-family: "Roboto";
     font-size: 14px;
@@ -220,16 +277,21 @@ td{
 }
 .logo-foot{
     padding-top: 67px;
+    padding-right: 5%;
 }
 .footer-container{
     margin-left: 15%;
-    margin-right: auto;
+    margin-right: 15%;
     display: flex;
+    width: 70%;
 }
 .info{
-    padding-top: 85px;
+    margin-top: 85px;
     width: 35%;
+    margin-bottom: 85px;
+    border-left: 0.5px solid #888787;
 }
+
 .bigger{
     margin-left: 10%;
     font-family: "Inter";
@@ -245,17 +307,29 @@ td{
     font-size: 16px;
     line-height: 26px;
 }
+.links-item{
+    padding-left: 19px;
+}
 .footer-navbar{
-    padding-top: 85px;
+    margin-top: 85px;
+    margin-bottom: 85px;    
+    border-left: 0.5px solid #888787;
     width: 20%;
 }
 .socials{
-    padding-top: 85px;
+    margin-top: 85px;
     width: 22.5%;
+    margin-bottom: 85px;    
+    border-left: 0.5px solid #888787;
+    padding-left: 21.83;
 }
 .soc-head{
     font-family: "Roboto";
     font-size: 14px;
+    padding-left: 22px;
+}
+.soc-icon{
+    padding-left: 22px;
 }
 .head-top{
     background-color: #d9d9d9;
@@ -264,6 +338,7 @@ td{
     padding-left: 7.3%;
     display: flex;
     justify-content: space-between;
+    border-bottom: 0.5px solid #888787;
 }
 .head-nav-menu{
     justify-content: right;
@@ -283,15 +358,27 @@ td{
     height: 20px;
     margin-right: 17.33px;
 }
-.contacts{
-    margin-bottom: 49.17px;
-}
 .head-bottom{
     display: flex;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     width: 90%;
+    text-align: center;
+    
+    
+}
+.nb-h3-1{
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    color: #000;
+    justify-content: center;
+    font-weight: bold;
+    border-left: 0.5px solid #888787;
+    border-right: 0.5px solid #888787;
+    width: 186px;
+    height: 100%;
+    padding-top: 11px;
 }
 .nb-h3{
     font-family: "Roboto Condensed";
@@ -299,8 +386,10 @@ td{
     color: #000;
     justify-content: center;
     font-weight: bold;
-    border: 0.5px solid #888787;
+    border-right: 0.5px solid #888787;
     width: 186px;
+    height: 100%;
+    padding-top: 11px;
 }
 .description{
     font-family: "Roboto";
@@ -309,4 +398,137 @@ td{
     margin-left: auto;
     margin-right: auto;
     font-weight: lighter;
+    padding-bottom: 11px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+.table{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.cell-1{
+    width: 25%;
+    margin-bottom: 142.27px;
+    margin-top: 142.27px;
+}
+.cell{
+    width: 25%;
+    margin-bottom: 142.27px;
+    margin-top: 142.27px;
+    border-left: 0.25px solid #888787;
+}
+.magacin{
+    display: flex;
+    margin-bottom: 0%;
+    justify-content: center;
+}
+.magacin .p18{
+    font-family: "Inter";
+    font-size: 14px;
+    color: #fff;
+}
+h4{
+    margin-bottom: 0%;
+    margin-top: 50px;
+}
+.table .p18{
+    margin-bottom: 0;
+}
+.proizvodi .p14{
+    border-top: 0.5px solid #c4c4c4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 40%;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #474747;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ghost{
+    position: relative;
+    padding-left: 6px;
+    bottom: -28px;
+}
+.proizvodi-top{
+    text-align: center;
+}
+.brendovi-tabela{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+.brendovi-cell{
+    width: 115px;
+}
+.brendovi-png{
+    padding-bottom: 0;
+}
+.brendovi-opis{
+    font-family: "Inter";
+    font-size: 18px;
+    text-align: center;
+}
+.brendovi .p28{
+    width: 35%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 44px;
+    padding-top: 83px;
+    border-bottom: 0.5px solid #c4c4c4;
+}
+.cell h4{
+    font-weight:900;
+}
+.cell-1 h4{
+    font-weight:900;
+}
+.cell-data{
+    padding-top: auto;
+    padding-bottom: auto;
+}
+.cell .p18{
+    font-weight:900;
+    padding-bottom: 50px;
+}
+.kartica-opis{
+    width: 100%;
+}
+.kartica-opis::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 52px;
+    background-color: #bf0f0f;
+}
+.brojke .p28::after{
+    content: '';
+    display: block;
+    height: 6px;
+    width: 10%;
+    background-color: #bf0f0f;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    margin-bottom: 93px;
+}
+.menu-article-text::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 12.5%;
+    background-color: #bf0f0f;
+    margin-top: 11px;
+}
+.onama h2::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 12.5%;
+    background-color: #bf0f0f;
+    margin-top: 11px;
+}
+

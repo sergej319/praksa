@@ -34,10 +34,10 @@
         </div>
         <div class="socials">
             <div class="soc-head">Pratite nas:</div><br>
-            <img src="img/f.png" href="#">
-            <img src="img/tweet.png" href="#">
-            <img src="img/yt.png" href="#">
-            <img src="img/mess.png" href="#">
+            <img src="img/f.png" class="soc-icon">
+            <img src="img/tweet.png" class="soc-icon">
+            <img src="img/yt.png" class="soc-icon">
+            <img src="img/mess.png" class="soc-icon">
         </div>
         </div>
         <div class="copyright">

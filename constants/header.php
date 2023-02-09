@@ -16,7 +16,7 @@
             </ul>
     </div>
     <div class="head-bottom">
-        <a href="#"><div class="nb-h3">O NAMA<p class="description">vizija za uspeh</p></div></a>
+        <a href="#"><div class="nb-h3-1">O NAMA<p class="description">vizija za uspeh</p></div></a>
         <a href="#"><div class="nb-h3">DVG PROIZVODI<p class="description">naši proizvodi</p></div></a>
         <a href="#"><div class="nb-h3">BRENDOVI<p class="description">koje zastupamo</p></div></a>
         <a href="#"><div class="nb-h3">DISTRIBUCIJA<p class="description">logistika i operativa</p></div></a>
