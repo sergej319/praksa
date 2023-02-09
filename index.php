@@ -68,26 +68,26 @@
                 kupci.
             </p>
             <div class="sve-kartice">
-                <div class="kartica">
+                <a href="#"><div class="kartica">
                     <img src="img/kese.png" class="kartica-img">
                     <div class="kartica-opis">KESE I FOLIJE</div>
-                </div>
-                <div class="kartica">
+                </div></a>
+                <a href="#"><div class="kartica">
                     <img src="img/kuhinja.png" class="kartica-img">
                     <div class="kartica-opis">ZA KUHINJU</div>
-                </div>
-                <div class="kartica">
+                </div></a>
+                <a href="#"><div class="kartica">
                     <img src="img/ubrusi.png" class="kartica-img">
                     <div class="kartica-opis">UBRUSI I TOALET PAPIRI</div>
-                </div>
-                <div class="kartica">
+                </div></a>
+                <a href="#"><div class="kartica">
                     <img src="img/kozmetika.png" class="kartica-img">
                     <div class="kartica-opis">KOZMETIKA</div>
-                </div>
-                <div class="kartica">
+                </div></a>
+                <a href="#"><div class="kartica">
                     <img src="img/kante.png" class="kartica-img">
                     <div class="kartica-opis">PLASTIČNE KANTE</div>
-                </div>
+                </div></a>
             </div>
         </div>
         <div class="brendovi">

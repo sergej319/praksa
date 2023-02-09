@@ -7,26 +7,22 @@
     <title>Header</title>
 </head>
 <body>
-    <div class="top">
-        <div class="logo"><img src="img/logo.png"></div>
-            <ul class="nav-menu">
-                <li class="nav-item-my"><a href="#" class="nav-link-my">Srpski</a></li>
+    <div class="head-top">
+        <div class="logo-head"><img src="img/logo.png"></div>
+            <ul class="head-nav-menu">
+                <li class="nav-item-my"><a>Srpski</a></li><!--hover i ostalo treba uraditi-->
                 <li class="nav-item-my"><a href="#" class="nav-link-my">English</a></li>
                 <li class="nav-item-my"><a href="#" class="nav-link-my">Magyar</a></li>
             </ul>
     </div>
-    <div class="bottom">
-        <table class="navbar">
-            <tr>
-                <td><a href="#" class="nb-h3">O NAMA</a><p class="description">vizija za uspeh</p></td>
-                <td><a href="#" class="nb-h3">DVG PROIZVODI</a><p class="description">naši proizvodi</p></td>
-                <td><a href="#" class="nb-h3">BRENDOVI</a><p class="description">koje zastupamo</p></td>
-                <td><a href="#" class="nb-h3">DISTRIBUCIJA</a><p class="description">logistika i operativa</p></td>
-                <td><a href="#" class="nb-h3">SARADNJA</a><p class="description">proširenje ponude</p></td>
-                <td><a href="#" class="nb-h3">NOVOSTI</a><p class="description">aktuelnosti</p></td>
-                <td><a href="#" class="nb-h3">KONTAKT</a><p class="description">kontaktirajte nas</p></td>
-            </tr>
-        </table>
+    <div class="head-bottom">
+        <a href="#"><div class="nb-h3">O NAMA<p class="description">vizija za uspeh</p></div></a>
+        <a href="#"><div class="nb-h3">DVG PROIZVODI<p class="description">naši proizvodi</p></div></a>
+        <a href="#"><div class="nb-h3">BRENDOVI<p class="description">koje zastupamo</p></div></a>
+        <a href="#"><div class="nb-h3">DISTRIBUCIJA<p class="description">logistika i operativa</p></div></a>
+        <a href="#"><div class="nb-h3">SARADNJA<p class="description">proširenje ponude</p></div></a>
+        <a href="#"><div class="nb-h3">NOVOSTI<p class="description">aktuelnosti</p></div></a>
+        <a href="#"><div class="nb-h3">KONTAKT<p class="description">kontaktirajte nas</p></div></a>
     </div>
 </body>
 </html>

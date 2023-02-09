@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
-    <link rel="stylesheet" href="SASS/footer.scss">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&700display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&700display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&700display=swap" rel="stylesheet">
@@ -13,12 +12,13 @@
 <body>
     
     <div class="footer">
-        <div class="logo"><img src="img/Vector.png"></div>
-        <div class="info"><p class="bigger">D.V.G. COMPANY</p>
+        
+        <div class="footer-container"><div class="logo-foot"><img src="img/Vector.png"></div>
+        <div class="info"><div class="bigger">D.V.G. COMPANY</div>
                             <ul class="contacts">
-                                <li class="contacts-item"><a href="#" class="contacts-item">Čantavirski put bb<br>24000 Subotica, Srbija</a></li>
-                                <li class="contacts-item"><a href="#">+381 24 568 555</a></li>
-                                <li class="contacts-item"><a href="#">office@dvgcompany.com</a></li>
+                                <div class="contacts-li"><img src="img/location.png" class="icons"><li class="contacts-item"><div class="contacts-item">Čantavirski put bb 24000 Subotica, Srbija</div></li></div><br>
+                                <div class="contacts-li"><img src="img/phone.png" class="icons"><li class="contacts-item"><a href="#">+381 24 568 555</a></li></div><br>
+                                <div class="contacts-li"><img src="img/mail.png" class="icons"><li class="contacts-item"><a href="#">office@dvgcompany.com</a></li></div>
                             </ul>
         </div>
         <div class="footer-navbar">
@@ -33,14 +33,18 @@
             </ul>
         </div>
         <div class="socials">
-            <p>Pratite nas:</p>
-            <img src="../imf/socials.png" href="#">
+            <div class="soc-head">Pratite nas:</div><br>
+            <img src="img/f.png" href="#">
+            <img src="img/tweet.png" href="#">
+            <img src="img/yt.png" href="#">
+            <img src="img/mess.png" href="#">
+        </div>
         </div>
         <div class="copyright">
-            <p>Copyright © 2021 DVG Company, Subotica d.o.o. Sva prava Zadržana.</p>
-            <a href="#">Privatnost podataka</a>
-            <a href="#">Uslovi korišćenja</a>
-            <p>Powered by:<a href="#">StudioPresent</a></p>
+            <p class="prava">Copyright © 2021 DVG Company, Subotica d.o.o. Sva prava Zadržana.</p>
+            <div class="config"><a href="#">Privatnost podataka</a>
+            <a href="#">Uslovi korišćenja</a></div>
+            <p class="sp">Powered by:<a href="#">StudioPresent</a></p>
         </div>
     </div>
     

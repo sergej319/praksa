@@ -1,3 +1,6 @@
+*{
+    list-style-type: none;
+}
 body{
     margin: 0;
     background-color:white;
@@ -14,6 +17,8 @@ hr{
     font-family: "Inter";
     font-size: 28px;
     color: #474747;
+    margin-top: 0;
+    padding-top: 28px;
 }
 .dugme{
     font-family: "Roboto";
@@ -59,6 +64,8 @@ h4{
 }
 .pozadina{
     background-image: url("../img/pozadina.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     justify-content: center;
 }
 table{
@@ -93,7 +100,6 @@ td{
     background-color: #f4f4f4 !important;
     text-align: center;
     width: 100%;
-    padding: 30px auto;
 }
 .p14{
     font-family: "Roboto";
@@ -149,16 +155,158 @@ td{
 .brendovi-png{
     padding-bottom: 50px;
 }
-/*listanje-kese">
-                    KESE I FOLIJE
-                </a>
-                <a href="#" class="listanje-kuhinja">
-                    ZA KUHINJU
-                </a>
-                <a href="#" class="listanje-ubrusi">
-                    UBRUSI I TOALET PAPIRI
-                </a>
-                <a href="#" class="listanje-kozmetika">
-                    KOZMETIKA
-                </a>
-                <a href="#" class="listanje-kante">*/
+.footer{
+    background-image: url("../img/footer-bg.png") !important;
+    background-size: cover;
+    color: #fff;
+}
+.footer a{
+    color: #fff;
+}
+.info .bigger{
+    font-family: "Inter";
+    font-size: 28px;
+}
+.copyright{
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.4;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+.sp{
+    justify-content: right !important;
+    width: 40%;
+    display: flex;
+    margin-right: 25px;
+}
+.prava{
+    margin-left: 65px;
+    margin-top: 25px;
+    margin-bottom: 24px;
+    width: 40%;
+    display: flex;
+}
+.config{
+    margin-left: 98px;
+    width: 40%;
+    display: flex;
+    gap: 30px;
+}
+.copyright a{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.info a{
+    text-decoration: underline;
+}
+.contacts-item{
+    margin: 0;
+    font-family: "Roboto";
+    font-size: 14px;
+    width: 166px;
+}
+.contacts-li p{
+    margin: 0;
+    padding: 0;
+}
+.contacts-li{
+    display: flex;
+    
+}
+.logo-foot{
+    padding-top: 67px;
+}
+.footer-container{
+    margin-left: 15%;
+    margin-right: auto;
+    display: flex;
+}
+.info{
+    padding-top: 85px;
+    width: 35%;
+}
+.bigger{
+    margin-left: 10%;
+    font-family: "Inter";
+    font-size: 28px;
+    color: #fff;
+}
+.links{
+    margin-left: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    line-height: 26px;
+}
+.footer-navbar{
+    padding-top: 85px;
+    width: 20%;
+}
+.socials{
+    padding-top: 85px;
+    width: 22.5%;
+}
+.soc-head{
+    font-family: "Roboto";
+    font-size: 14px;
+}
+.head-top{
+    background-color: #d9d9d9;
+    padding-top: 17px;
+    padding-bottom: 14px;
+    padding-left: 7.3%;
+    display: flex;
+    justify-content: space-between;
+}
+.head-nav-menu{
+    justify-content: right;
+    padding-right: 7.3%;
+    justify-content: space-between;
+    gap: 16.82px;
+}
+.nav-item-my{
+    float: left;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+.nav-link-my{
+    margin-left: 15.82px;
+}
+.icons{
+    height: 20px;
+    margin-right: 17.33px;
+}
+.contacts{
+    margin-bottom: 49.17px;
+}
+.head-bottom{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 90%;
+}
+.nb-h3{
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    color: #000;
+    justify-content: center;
+    font-weight: bold;
+    border: 0.5px solid #888787;
+    width: 186px;
+}
+.description{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #474747;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: lighter;
+}
