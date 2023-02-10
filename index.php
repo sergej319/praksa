@@ -35,17 +35,17 @@
         <img src="img/convoy.png" class="convoy-img">
     </div>
     <div class="menu">
-        <a href="#"><div class="menu-article">
-            <img src="img/staff.png" class="menu-article-img" href="#">
-            <br><p class="menu-article-text">POSTANITE NAŠ PARTNER</p>
-        </div></a>
-        <a href="#"><div class="menu-article">
-            <img src="img/komarac.png" class="menu-article-img" href="#"><br>
-            <p class="menu-article-text">NAŠI PROIZVODI</p>
-        </div></a>
-        <a href="#"><div class="menu-article">
-            <img src="img/kombiji.png" class="menu-article-img" href="#"><br>
-            <p class="menu-article-text">UVOZ IZ MAĐARSKE</p>
+        <div class="menu-article">
+            <a href="#"><img src="img/staff.png" class="menu-article-img"></a>
+            <br><a href="#"><p class="menu-article-text">POSTANITE NAŠ PARTNER</p></a>
+        </div>
+        <div class="menu-article">
+            <a href="#"><img src="img/komarac.png" class="menu-article-img"></a><br>
+            <a href="#"><p class="menu-article-text">NAŠI PROIZVODI</p></a>
+        </div>
+        <div class="menu-article">
+            <a href="#"><img src="img/kombiji.png" class="menu-article-img"></a><br>
+            <a href="#"><p class="menu-article-text">UVOZ IZ MAĐARSKE</p></a>
         </div></a>
     </div>
     
@@ -99,6 +99,7 @@
                 distribuciju
             </p>
             <div class="brendovi-tabela">
+                <div class="per3-1">
                 <div class="brendovi-cell">
                     <img src="img/dove.png" class="brendovi-png">
                     <p class="brendovi-opis">Dove</p>
@@ -110,8 +111,8 @@
                 <div class="brendovi-cell">
                     <img src="img/palmolive.png" class="brendovi-png">
                     <p class="brendovi-opis">Palmolive</p>
-                </div>
-                <div class="brendovi-cell">
+                </div></div>
+                <div class="per3-2"><div class="brendovi-cell">
                     <img src="img/vanish.png" class="brendovi-png">
                     <p class="brendovi-opis">Vanish</p>
                 </div>
@@ -122,7 +123,7 @@
                 <div class="brendovi-cell">
                     <img src="img/cif.png" class="brendovi-png">
                     <p class="brendovi-opis">Cif</p>
-                </div>
+                </div></div>
                 </div> 
             <div class="dugme-okvir"><a href="#" class="dugme">Svi brendovi u našem portfoliju</a></div>               
     </div>

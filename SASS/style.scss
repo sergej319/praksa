@@ -16,7 +16,7 @@ hr{
     border:1px solid #303030;
     margin-left: 7%;
     margin-right: 20%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .onama .p28{
     font-family: "Inter";
@@ -29,13 +29,10 @@ hr{
     margin-left: 7%;
     margin-right: 20%;
 }
-.onama{
-
-}
 .onama .p14{
     margin-left: 7%;
-    margin-right: 20%
-    padding-top: 5%
+    margin-right: 20%;
+    padding-top: 5%;
 }
 .onama .dugme{
     font-family: "Roboto";
@@ -104,7 +101,7 @@ h4{
     color: #303030;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 .brendovi{
     margin-left: auto;
@@ -260,6 +257,10 @@ td{
 .info a{
     text-decoration: underline;
 }
+.contacts{
+    padding-left: auto;
+    padding-right: auto;
+}
 .contacts-item{
     display: flex;
     margin: 0;
@@ -280,6 +281,7 @@ td{
     padding-right: 5%;
 }
 .footer-container{
+    justify-content: space-between;
     margin-left: 15%;
     margin-right: 15%;
     display: flex;
@@ -294,6 +296,7 @@ td{
 
 .bigger{
     margin-left: 10%;
+    margin-right: 10%;
     font-family: "Inter";
     font-size: 28px;
     color: #fff;
@@ -374,8 +377,8 @@ td{
     color: #000;
     justify-content: center;
     font-weight: bold;
-    border-left: 0.5px solid #888787;
-    border-right: 0.5px solid #888787;
+    border-left: 0.25px solid #888787;
+    border-right: 0.25px solid #888787;
     width: 186px;
     height: 100%;
     padding-top: 11px;
@@ -386,7 +389,7 @@ td{
     color: #000;
     justify-content: center;
     font-weight: bold;
-    border-right: 0.5px solid #888787;
+    border-right: 0.25px solid #888787;
     width: 186px;
     height: 100%;
     padding-top: 11px;
@@ -457,8 +460,20 @@ h4{
 }
 .brendovi-tabela{
     display: flex;
-    justify-content: space-between;
+    gap: 15px;
     margin-bottom: 90px;
+}
+.per3-1{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+.per3-2{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 0;
+    margin-right: auto;
 }
 .brendovi-cell{
     width: 115px;
@@ -530,5 +545,129 @@ h4{
     width: 12.5%;
     background-color: #bf0f0f;
     margin-top: 11px;
+}
+@media (max-width: 1315px){
+    .menu{
+        display: block;
+        
+
+    }
+    .menu a{
+        width: fit-content;
+        display: block;
+    }
+    .menu-article{
+        justify-content: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: auto;
+        padding-right: auto;
+    }
+}
+@media (max-width: 1200px){
+    .onama{
+        width: 100%;
+    }
+    .zgrada{
+        width: 100%;
+    }
+}
+@media (max-width: 1000px){
+    .bigger{
+        font-size: 21px;
+    }
+    .contacts-item{
+        font-size: 11px;
+    }
+    .links{
+        font-size: 12px;
+    }
+    .soc-head{
+        font-size: 11px;
+    }
+}
+@media (max-width: 900px){
+    .brendovi{
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        height: 40%;
+        text-align: center;
+        padding: 0 5%;
+        padding-bottom: 90px;
+    }
+    .brendovi-tabela{
+        display: block;
+        justify-content: none;
+        margin-bottom: 90px;
+    } 
+    .per3-1{
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    .per3-2{
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    .contacts-li{
+        display: block;
+    }
+}
+@media(max-width: 700px){
+    .info{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo-foot img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-container{
+        display: block;
+        text-align: center;
+    }
+    .bigger{
+        font-size: 28px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contacts-item{
+        font-size: 14px;
+    }
+    .links{
+        font-size: 16px;
+    }
+    .soc-head{
+        font-size: 14px;
+    }
+    .contacts-li{
+        display: flex;
+        text-align: left;
+        padding-left:;
+    }
+}
+@media (max-width: 450px){
+    .menu-article img{
+        width: 100%
+    }
+    .brendovi-cell{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .per3-1{
+        display: block;
+    }
+    .per3-2{
+        display: block;
+    }
 }
 
