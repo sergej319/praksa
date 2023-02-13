@@ -1,18 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DVG Company</title>
-    <link rel="stylesheet" href="SASS/style.scss">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&700display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&700display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&700display=swap" rel="stylesheet">
-</head>
-<body>
+
+
     <?php require 'constants/header.php'; ?>
-    <img src="img/Video.png" class="video">
+    <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close-button" id="close-button">&times;</span>
+      <p>Hvala na poseti!</p>
+      <img src="img/Vector.png">
+    </div>
+  </div>
+    <script>
+        function showPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+
+// Funkcija za zatvaranje pop-up prozora
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+// Poziv funkcije za prikazivanje pop-up prozora nakon 5 sekundi
+setTimeout(function() {
+  showPopup();
+}, 5000);
+
+// Event listener za zatvaranje pop-up prozora klikom na dugme
+document.getElementById("close-button").addEventListener("click", closePopup);
+    </script>
+    <div class="container-swiper">
+    <div class="swiper">
+                    
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="img/Video.png" class="video"></div>
+    <div class="swiper-slide"><img src="img/magacin.png" class="magacin"></div>
+    <div class="swiper-slide"><img src="img/meeting.png" class="meeting"></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+  </div>
+</div>
+<script>
+const swiper = new Swiper('.swiper', {
+  
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <div class="pasus-1">
         <img src="img/zgrada.png" class="zgrada">
         <div class="onama">
@@ -68,6 +121,7 @@
                 nega lica i tela. Uspeli smo da uskladimo kvalitet i cenu, što su prepoznali i naši<br>
                 kupci.
             </p></div>
+            <!--
             <div class="sve-kartice">
                 <a href="#"><div class="kartica">
                     <img src="img/kese.png" class="kartica-img">
@@ -88,8 +142,48 @@
                 <a href="#"><div class="kartica">
                     <img src="img/kante.png" class="kartica-img">
                     <div class="kartica-opis">PLASTIČNE KANTE</div>
-                </div></a>
-                
+                </div></a>-->
+    <div class="container-swiper">
+    <div class="swiper">
+                    
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><a href="#"><div class="kartica">
+                    <img src="img/kese.png" class="kartica-img">
+                    <div class="kartica-opis">KESE I FOLIJE</div>
+                </div></a></div>
+    <div class="swiper-slide"><a href="#"><div class="kartica">
+                    <img src="img/kuhinja.png" class="kartica-img">
+                    <div class="kartica-opis">ZA KUHINJU</div>
+                </div></a></div>
+    <div class="swiper-slide"><a href="#"><div class="kartica">
+                    <img src="img/ubrusi.png" class="kartica-img">
+                    <div class="kartica-opis">UBRUSI I TOALET PAPIRI</div>
+                </div></a></div>
+    <div class="swiper-slide"><a href="#"><div class="kartica">
+                    <img src="img/kozmetika.png" class="kartica-img">
+                    <div class="kartica-opis">KOZMETIKA</div>
+                </div></a></div>
+    <div class="swiper-slide"><a href="#"><div class="kartica">
+                    <img src="img/kante.png" class="kartica-img">
+                    <div class="kartica-opis">PLASTIČNE KANTE</div>
+                </div></a></div>
+    
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+</div>
+
+                <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
             </div>
             <img src="img/ghost.png" class="ghost">
         </div>
@@ -125,9 +219,7 @@
                     <p class="brendovi-opis">Cif</p>
                 </div></div>
                 </div> 
-            <div class="dugme-okvir"><a href="#" class="dugme">Svi brendovi u našem portfoliju</a></div>               
+            <div class="dugme-okvir"><a href="#" class="dugme">Svi brendovi u našem portfoliju</a><a href="#" class="mini-dugme">Brendovi portfolija</a></div>               
     </div>
     
     <?php require 'constants/footer.php'; ?>
-</body>
-</html>

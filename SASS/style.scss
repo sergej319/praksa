@@ -1,6 +1,83 @@
 *{
     list-style-type: none;
 }
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .popup p{
+    font-family: "Roboto";
+    font-size: 24px;
+  }
+  .popup-content {
+    background-color: #fefefe;
+    margin: 50% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: center;
+    border-radius: 6px;
+    opacity: none;
+  }
+  .popup-content p::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 52px;
+    background-color: #bf0f0f;
+    margin-left: auto;
+    margin-right: auto;
+}
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.container-swiper{
+    border-top: 0.5px solid #888787;
+    width: 100%;
+    height: fit-content;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper {
+    width: 100%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: #222;
+    background-color: #222;
+}
 body{
     margin: 0;
     background-color:white;
@@ -65,6 +142,12 @@ hr{
     padding: 15px 16px;
     background-color: #bf0f0f;
     border-radius: 4px;
+}
+.mini-dugme{
+    font-family: "Roboto";
+    color:#fff;
+    padding: 15px 16px;
+    display: none;
 }
 a{
     text-decoration: none;
@@ -149,11 +232,8 @@ td{
 }
 .p14{
     font-family: "Roboto";
-    font-size: 14px;
+    font-size: 16px;
     color: #474747;
-}
-.convoy{
-    
 }
 .convoy-img{
     margin-top: 73px;
@@ -289,7 +369,6 @@ td{
 }
 .info{
     margin-top: 85px;
-    width: 35%;
     margin-bottom: 85px;
     border-left: 0.5px solid #888787;
 }
@@ -332,7 +411,7 @@ td{
     padding-left: 22px;
 }
 .soc-icon{
-    padding-left: 22px;
+    padding-left: 7.3%;
 }
 .head-top{
     background-color: #d9d9d9;
@@ -346,6 +425,7 @@ td{
 .head-nav-menu{
     justify-content: right;
     padding-right: 7.3%;
+    padding-left: 7.3%;
     justify-content: space-between;
     gap: 16.82px;
 }
@@ -367,9 +447,13 @@ td{
     margin-right: auto;
     justify-content: center;
     width: 90%;
-    text-align: center;
-    
-    
+    text-align: center;    
+}
+.hb-1{
+    display: flex;
+}
+.hb-2{
+    display: flex;
 }
 .nb-h3-1{
     font-family: "Roboto Condensed";
@@ -378,6 +462,17 @@ td{
     justify-content: center;
     font-weight: bold;
     border-left: 0.25px solid #888787;
+    border-right: 0.25px solid #888787;
+    width: 186px;
+    height: 100%;
+    padding-top: 11px;
+}
+.nb-h3-2{
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    color: #000;
+    justify-content: center;
+    font-weight: bold;
     border-right: 0.25px solid #888787;
     width: 186px;
     height: 100%;
@@ -413,13 +508,13 @@ td{
 }
 .cell-1{
     width: 25%;
-    margin-bottom: 142.27px;
-    margin-top: 142.27px;
+    margin-bottom: 15%;
+    margin-top: 15%;
 }
 .cell{
     width: 25%;
-    margin-bottom: 142.27px;
-    margin-top: 142.27px;
+    margin-bottom: 15%;
+    margin-top: 15%;
     border-left: 0.25px solid #888787;
 }
 .magacin{
@@ -445,7 +540,7 @@ h4{
     padding-bottom: 60px;
     width: 40%;
     font-family: "Roboto";
-    font-size: 14px;
+    font-size: 18px;
     color: #474747;
     margin-left: auto;
     margin-right: auto;
@@ -547,10 +642,82 @@ h4{
     margin-top: 11px;
 }
 @media (max-width: 1315px){
+    .head{
+        width: 100%;
+        background-color: #d9d9d9;
+        padding: 0;
+        display: block;
+        justify-content: space-between;
+        height: 75px;
+    }
+    .hamburger{
+        color: #222;
+        width: 10%;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 14px;
+    }
+    .head-bottom{
+        position: relative;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 9;
+    }
+    .nav-link{
+        margin: 16px 0;
+    }
+    .head-bottom.active{
+        //display: block;
+        left: 0;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+ /*   .hb-1{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .hb-1 .nb-h3 .nb-h3-1{
+        border-bottom: 0.25px solid #888787;
+        padding-bottom: 1px;
+    }
+    .hb-2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .nb-h3-2{
+        font-family: "Roboto Condensed";
+        font-size: 16px;
+        color: #000;
+        justify-content: center;
+        font-weight: bold;
+        border-left: 0.25px solid #888787;
+        border-right: 0.25px solid #888787;
+        width: 186px;
+        height: 100%;
+        padding-top: 11px;
+    }
+    .head-bottom{
+        display: block;
+    }*/
     .menu{
         display: block;
-        
-
+        justify-content: center;
     }
     .menu a{
         width: fit-content;
@@ -588,6 +755,9 @@ h4{
     }
 }
 @media (max-width: 900px){
+    .table h4{
+        font-size: 32px;
+    }
     .brendovi{
         margin-left: auto;
         margin-right: auto;
@@ -626,6 +796,17 @@ h4{
     .info{
         margin-left: auto;
         margin-right: auto;
+        border-left: none;
+    }
+    .footer-navbar{
+        margin-left: auto;
+        margin-right: auto;
+        border-left: none;
+    }
+    .socials{
+        margin-left: auto;
+        margin-right: auto;
+        border-left: none;
     }
     .logo-foot img{
         margin-left: auto;
@@ -643,16 +824,55 @@ h4{
     .contacts-item{
         font-size: 14px;
     }
+    .contacts-li{
+        text-align: center;
+        width: 166px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .links{
         font-size: 16px;
     }
     .soc-head{
         font-size: 14px;
     }
+    .contacts{
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .contacts-li{
         display: flex;
         text-align: left;
-        padding-left:;
+    }
+}
+@media (max-width: 650px){
+    .magacin{
+        margin-top: 0;
+    }
+    .table{
+        display: block;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: auto;
+        padding-right: auto;
+        padding-top: 50px;
+    }
+    .cell{
+        margin-left: auto;
+        margin-right: auto;
+        border-left: 0;
+    }
+    .cell-1{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+    .cell-data{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media (max-width: 450px){
@@ -669,5 +889,88 @@ h4{
     .per3-2{
         display: block;
     }
+    ul .contacts{
+        padding-left: auto;
+        padding-right: auto;
+    }
+}
+@media (max-width: 400px){
+    .footer-container{
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        text-align: center;
+    }
+    .logo-foot{
+        padding-left: 0;
+        justify-content: left;
+    }
+    a .links-bottom{
+        padding: 0;
+    }
+    .links-item{
+        padding: 0;
+    }
+    .logo-foot img{
+        padding-left: 0%;
+    }
+    .links{
+        text-align: center;
+    }
+    .info{
+        margin-left: 0%;
+    }
+    .soc-head{
+        text-align: center;
+        padding: 0;
+    }
+    .icons{
+        display: none;
+    }
+    .bigger{
+        text-align: center;
+    }
+    .contacts-item{
+        text-align: center;
+    }
+    .contacts{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: auto;
+        padding-right: auto;
+    }
+}
+@media (max-width: 332px){
+    .dugme{
+        display: none;
+    }
+    .mini-dugme{
+        display: flex;
+        font-family: "Roboto";
+        color:#fff;
+        padding: 15px 16px;
+        background-color: #bf0f0f;
+        border-radius: 4px;
+        justify-content: center;
+        text-align: center;
+        padding-left: auto;
+        padding-right: auto;
+    }
+}
+@media (max-width: 320px){
+    .table{
+        margin-left: 30%;
+    }
+    .cell-1{
+        margin-left: 0%;
+    }
+    .cell{
+        margin-left: 0%;
+    }
+    .magacin{
+        justify-content: left;
+    }
+       
 }
 
