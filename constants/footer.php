@@ -6,8 +6,8 @@
         <div class="info"><div class="bigger">D.V.G. COMPANY</div>
                             <ul class="contacts">
                                 <div class="contacts-li"><img src="img/location.png" class="icons"><li class="contacts-item"><div class="contacts-item">Čantavirski put bb 24000 Subotica, Srbija</div></li></div><br>
-                                <div class="contacts-li"><img src="img/phone.png" class="icons"><li class="contacts-item"><a href="#">+381 24 568 555</a></li></div><br>
-                                <div class="contacts-li"><img src="img/mail.png" class="icons"><li class="contacts-item"><a href="#">office@dvgcompany.com</a></li></div>
+                                <div class="contacts-li"><img src="img/phone.png" class="icons"><li class="contacts-item"><a href="tel:+38124568555">+381 24 568 555</a></li></div><br>
+                                <div class="contacts-li"><img src="img/mail.png" class="icons"><li class="contacts-item"><a href="mailto:office@dvgcompany.com">office@dvgcompany.com</a></li></div>
                             </ul>
         </div>
         <div class="footer-navbar">

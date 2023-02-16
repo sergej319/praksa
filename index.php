@@ -13,52 +13,41 @@
             document.body.style.overflow = "hidden";
   document.getElementById("popup").style.display = "block";
 }
-
-// Funkcija za zatvaranje pop-up prozora
 function closePopup() {
     document.body.style.overflow = "auto";
   document.getElementById("popup").style.display = "none";
 }
-
-// Poziv funkcije za prikazivanje pop-up prozora nakon 5 sekundi
 setTimeout(function() {
   showPopup();
 }, 5000);
 
-// Event listener za zatvaranje pop-up prozora klikom na dugme
 document.getElementById("close-button").addEventListener("click", closePopup);
 
     </script>
 <div class="slider-1">
-<!-- Slideshow container -->
+ 
 <div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
     <img src="img/Video.png" style="width:100%">
-    <!--<div class="text">Caption Text</div>-->
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
     <img src="img/magacin.jpg" style="width:100%">
-    <!--<div class="text">Caption Two</div>-->
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
     <img src="img/meeting.jpg" style="width:100%">
-    <!--<div class="text">Caption Three</div>-->
   </div>
 
-  <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
 
-<!-- The dots/circles -->
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
@@ -69,31 +58,40 @@ document.getElementById("close-button").addEventListener("click", closePopup);
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}    
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+
+function automaticSlideShow() {
+setInterval(function() {
+plusSlides(1);
+if (slideIndex === document.getElementsByClassName("mySlides").length) {
+slideIndex = 0;
+}
+}, 5000);
+}
+
+automaticSlideShow();
 </script>
 
  
@@ -112,7 +110,7 @@ function showSlides(n) {
                 distributivni centar i poslovne prostorije, sa ukupno 3000m<sup>2</sup> magacinskoh prostora
                 koji zadovoljava sve segmente u pogledu smeštaja, čuvanja i plasiranja robe.
             </p><br>
-            <a href="#" class="dugme">Saznajte više o nama</a>
+             <a href="#"><button type="dugme">Saznajte više o nama</button></a>
         </div>
     </div>
     <div class="prlx">
@@ -202,11 +200,10 @@ function showSlides(n) {
   </div>
 </div>
 <script>
-    var container = document.getElementById('container')
+var container = document.getElementById('container');
 var slider = document.getElementById('slider');
 var slides = document.getElementsByClassName('slide').length;
 var buttons = document.getElementsByClassName('btn');
-
 
 var currentPosition = 0;
 var currentMargin = 0;
@@ -215,6 +212,7 @@ var slidesCount = slides - slidesPerPage;
 var containerWidth = container.offsetWidth;
 var prevKeyActive = false;
 var nextKeyActive = true;
+var slideInterval;
 
 window.addEventListener("resize", checkWidth);
 
@@ -283,6 +281,28 @@ function slideLeft() {
         buttons[0].classList.remove('inactive');
     }
 };
+
+function startSlideInterval() {
+  slideInterval = setInterval(function() {
+    if (currentPosition == slidesCount) {
+      slider.style.marginLeft = 0 + '%';
+      currentMargin = 0;
+      currentPosition = 0;
+      buttons[0].classList.add('inactive');
+      buttons[1].classList.remove('inactive');
+    } else {
+      slideLeft();
+    }
+  }, 3000);
+}
+
+function stopSlideInterval() {
+  clearInterval(slideInterval);
+}
+
+startSlideInterval();
+container.addEventListener('mouseenter', stopSlideInterval);
+container.addEventListener('mouseleave', startSlideInterval);
 </script>
     
    
@@ -320,7 +340,7 @@ function slideLeft() {
                     <p class="brendovi-opis">Cif</p>
                 </div></div>
                 </div> 
-            <div class="dugme-okvir"><a href="#" class="dugme">Svi brendovi u našem portfoliju</a><a href="#" class="mini-dugme">Brendovi portfolija</a></div>               
+                <a href="#"><button type="dugme">Svi brendovi u našem portfoliju</button></a>               
     </div>
     
     
